@@ -6,6 +6,9 @@
 
 void stepperCW(int steps) {
 
+    pinMode(dir, OUTPUT);
+    pinMode(step, OUTPUT);
+
     for (int i = 0;i<steps;i++) {
 
     digitalWrite(dir, LOW);
@@ -20,6 +23,9 @@ void stepperCW(int steps) {
 }
 
 void stepperCCW(int steps) {
+
+    pinMode(dir, OUTPUT);
+    pinMode(step, OUTPUT);
 
     for (int i = 0;i<steps;i++) {
 
