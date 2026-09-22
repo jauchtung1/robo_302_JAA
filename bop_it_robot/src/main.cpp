@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "stepper.h"
+#include "solenoid.h"
 
 void spinStepper(){
   stepperCW(200);
@@ -8,16 +9,13 @@ void spinStepper(){
   delay(1000);
 }
 
-void solenoid3() {
-
-}
 
 void setup() {
-  solenoid3();
+  pinMode(sol, OUTPUT);
   
 }
 
 void loop() {
-  
+  solenoid3();
   
 }
