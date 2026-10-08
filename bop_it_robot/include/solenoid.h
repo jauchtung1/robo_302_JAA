@@ -3,6 +3,6 @@
 
 #define sol 6
 
-void solenoid();
+void solenoid3();
 
 #endif

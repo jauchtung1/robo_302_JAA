@@ -1,6 +1,8 @@
 #include <Arduino.h>
+#include <JrkG2.h>
 #include "stepper.h"
 #include "solenoid.h"
+#include "linearActuator.h"
 
 void spinStepper(){
   stepperCW(200);
@@ -12,10 +14,15 @@ void spinStepper(){
 
 void setup() {
   pinMode(sol, OUTPUT);
-  
+  linearActuatorSetup();
 }
 
 void loop() {
-  solenoid3();
+  linearActuator(0);
+  delay(3000);
+  linearActuator(20);
+  delay(3000);
+  linearActuator(0);
+  
   
 }
