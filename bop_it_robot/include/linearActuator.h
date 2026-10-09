@@ -4,8 +4,8 @@
 #define JRK_RX 18
 #define JRK_TX 17
 
-#define MIN_R 600
-#define MAX_R 3750
+#define MIN_R 200
+#define MAX_R 3800
 
 void linearActuatorSetup();
 
