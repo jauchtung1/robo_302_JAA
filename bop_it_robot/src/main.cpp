@@ -4,6 +4,8 @@
 #include "solenoid.h"
 #include "linearActuator.h"
 
+JrkG2Serial jrk1(Serial1);
+
 void spinStepper(){
   stepperCW(200);
   delay(1000);
@@ -19,10 +21,6 @@ void setup() {
 
 void loop() {
   linearActuator(0);
-  delay(3000);
   linearActuator(20);
-  delay(3000);
-  linearActuator(0);
-  
   
 }
